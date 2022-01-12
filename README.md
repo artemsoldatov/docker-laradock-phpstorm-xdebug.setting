@@ -9,7 +9,7 @@ sudo ufw status
 sudo ufw verbose
 sudo ufw enable
 ```
-> Need to check current IP address
+> Need to check current IP address. For example: `ifconfig`
 
 Allow for IP: `172.16.0.0/12` as example
 ```bash
