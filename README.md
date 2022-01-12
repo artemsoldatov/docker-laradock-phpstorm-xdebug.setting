@@ -103,3 +103,13 @@ extra_hosts:
 ```
 ---
 
+### Server configuration
+> Create in root `.run/Laradock.run.xml`
+```xml
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Laradock" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" filter_connections="FILTER" server_name="laradock" session_id="PHPSTORM">
+    <method v="2" />
+  </configuration>
+</component>
+```
+---
