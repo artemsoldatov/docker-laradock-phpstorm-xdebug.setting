@@ -23,7 +23,7 @@ PHP_IDE_CONFIG=serverName=laradock
 
 ### Go to php-fpm console  
 ```bash
-docker exec -it truelearn_php-fpm_1 bash
+docker exec -it laradock_php-fpm_1 bash
 
 apt-get update && apt-get install vim -y
 
@@ -37,7 +37,7 @@ vim /usr/local/etc/php/conf.d/xdebug.ini
 
 #### ~~Go to php-fpm consol (alternative. does not work!)~~
 ```bash
-#docker exec -it truelearn_workspace_1 bash
+#docker exec -it laradock_workspace_1 bash
 #nano /etc/php/7.4/cli/conf.d/20-xdebug.ini
 ```
 ---
