@@ -70,7 +70,8 @@ nano /usr/local/etc/php/conf.d/xdebug.ini
 ```ini
 xdebug.client_host="host.docker.internal"
 ; xdebug.discover_client_host=false
-xdebug.client_port=9003
+; xdebug.client_port=9003
+xdebug.client_port=9000
 xdebug.idekey=PHPSTORM
 
 xdebug.start_with_request=yes
