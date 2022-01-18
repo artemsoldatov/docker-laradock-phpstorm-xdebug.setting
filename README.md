@@ -23,7 +23,7 @@ sudo ufw allow in from 192.168.0.0/12 to any port 9001 comment xDebug9001
 sudo ufw allow in from 192.168.0.0/12 to any port 9002 comment xDebug9002
 sudo ufw allow in from 192.168.0.0/12 to any port 9003 comment xDebug9003
 ```
----
+***
 
 ### .env  
 ```dotenv
@@ -33,7 +33,7 @@ PHP_FPM_INSTALL_XDEBUG=true
 PHP_FPM_XDEBUG_PORT=9003
 PHP_IDE_CONFIG=serverName=laradock
 ```
----
+***
 
 ### Go to php-fpm console  
 ```bash
@@ -56,14 +56,14 @@ nano /usr/local/etc/php/conf.d/xdebug.ini
 ```bash
 #vim /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 ```
----
+***
 
 #### ~~Go to php-fpm consol (alternative. does not work!)~~
 ```bash
 #docker exec -it laradock_workspace_1 bash
 #nano /etc/php/7.4/cli/conf.d/20-xdebug.ini
 ```
----
+***
 
 ### xdebug.ini  
 
@@ -87,7 +87,7 @@ xdebug.var_display_max_children=-1
 xdebug.var_display_max_data=-1
 xdebug.var_display_max_depth=-1
 ```
----
+***
 
 #### ~~xdebug.ini (bad alternative)~~
 ```ini
@@ -102,14 +102,14 @@ xdebug.idekey=PHPSTORM
 xdebug.start_with_request=yes 
 xdebug.log=/tmp/xdebug.log
 ```
----
+***
 
 ### php-fpm need to restart
 ```bash
 service php-fpm restart
 ```
 > Or you can do it manually in PHPStorm -> Services -> Docker -> php-fpm -> container -> right_mouse_button -> restart
----
+***
 
 ### docker-compose.yml  
 ```yaml
@@ -125,7 +125,7 @@ php-fpm:
     extra_hosts:
     - "host.docker.internal:host-gateway"
 ```
----
+***
 
 ## PhpStorm setting
 
@@ -138,17 +138,17 @@ php-fpm:
   </configuration>
 </component>
 ```
----
+***
 
 ### Settings -> PHP -> Debug
 Debug port: `9000,9003`  
 
----
+***
 
 ### Settings -> PHP -> Debug -> Validate
 Path: `_path_to_site_dir_`  
 URL: `http://127.0.0.1`  
----
+***
 
 ### Settings -> PHP -> Servers
 Name: `_name_server_`  
@@ -157,10 +157,10 @@ Port: `80`
 Debuger: `Xdebug`  
 File Directory: `_local_path_to_site_`  
 Absolute path: `var/www/_project_dir_`  
----
+***
 
 ### Run/Debug Configuration
 Name: `_name_server_`  
 Server: `_name_server_`  
 IDE key: `PHPSTORM`  
----
+***
