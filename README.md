@@ -102,6 +102,10 @@ php-fpm:
 ```
 ***
 
+### Docker rebuild
+> After all the changes, you need to rebuild the docker assembly
+***
+
 ## PhpStorm setting
 
 ### Server configuration
