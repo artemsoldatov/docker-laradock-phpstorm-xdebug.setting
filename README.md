@@ -120,7 +120,9 @@ Debug port: `9000,9003`
 ***
 
 ### Settings -> PHP -> Debug -> Validate
-Path: `_path_to_site_dir_`  
+Path: `_path_to_site_entry_point_dir_`  
+> `_path_to_site_entry_point_dir_` should be the path to the site entry point
+
 URL: `http://127.0.0.1`  
 ***
 
@@ -129,8 +131,8 @@ Name: `_name_server_`
 Host: `localhost`  
 Port: `80`  
 Debuger: `Xdebug`  
-File Directory: `_local_path_to_site_`  
-Absolute path: `var/www/_project_dir_`  
+File Directory: `_local_path_to_site_entry_point_dir_`  
+Absolute path: `var/www/_project_dir_/_path_to_site_entry_point_`  
 
 > ***OR*** if there is a problem adding mapping through the settings, you can do it manually. You need to add the similar code to the file `.idea/workspace.xml` at the appropriate location
 
